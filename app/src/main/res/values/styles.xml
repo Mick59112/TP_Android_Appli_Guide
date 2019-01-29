@@ -14,10 +14,24 @@
         <item name="android:windowFullscreen">true</item>
     </style>
 
+    <style name="SplashHomeAccueil1">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textAlignment">textStart</item>
+    </style>
+
     <style name="SplashTitle">
         <item name="android:textSize">22sp</item>
         <item name="android:textColor">@android:color/white</item>
         <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="SplashTextHome">
+        <item name="android:textAlignment">textStart</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <!--<item name="android:textStyle">bold</item>-->
     </style>
 
 </resources>

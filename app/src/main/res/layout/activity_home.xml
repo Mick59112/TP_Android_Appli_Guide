@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -19,24 +18,27 @@
             />
 
         <Button
+            style="@style/SplashHomeAccueil1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/accueil2"
-            android:text="Hôtel resto Retrouvez les meilleurs hôtels et restaurants"
+            android:text="@string/text_button_accueil2"
             />
 
     </LinearLayout>
 
     <Button
+        style="@style/SplashTextHome"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/accueil3"
-        android:text="RESERVER UN RESTAURANT"/>
+        android:text="RESERVER\nUN RESTAURANT"/>
 
     <Button
+        style="@style/SplashTextHome"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/accueil4"
-        android:text="RESERVER UN HOTEL"/>
+        android:text="RESERVER\nUN HOTEL"/>
 
 </LinearLayout>
