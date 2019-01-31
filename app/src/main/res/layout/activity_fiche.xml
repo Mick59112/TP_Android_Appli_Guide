@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.Fiche.FicheActivity">
+
+    <ImageView
+        android:id="@+id/ImageViewFicheResto"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        tools:src="@drawable/photo_restaurant" />
+
+    <TextView
+        android:id="@+id/TextViewFicheNameResto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:gravity="center_horizontal"
+        tools:text="NOM RESTAURANT"/>
+
+    <TextView
+        android:id="@+id/TextViewFicheCategoryResto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        tools:text="Catégorie"/>
+
+    <Button
+        android:id="@+id/ButtonEmailFicheResto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="contact@resto.fr"
+        android:background="@drawable/fiche_bouton_email"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:textColor="@color/colorWhite"
+        />
+
+    <Button
+        android:id="@+id/ButtonPhoneFicheResto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="0102030405"
+        android:background="@drawable/fiche_bouton_phone"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:textColor="@color/colorWhite"/>
+
+    <Button
+        android:id="@+id/ButtonWebFicheResto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="http://www.resto.fr"
+        android:background="@drawable/fiche_bouton_web"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:textColor="@color/colorWhite"/>
+
+
+
+</LinearLayout>

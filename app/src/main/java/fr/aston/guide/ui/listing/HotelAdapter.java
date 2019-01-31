@@ -34,7 +34,7 @@ public class HotelAdapter extends ArrayAdapter<Records> {
         Records item = getItem(position);
 
         textViewTitle.setText(item.fields.nom);
-        textViewCategory.setText(item.fields.typologie+" " +item.fields.categorie);
+        textViewCategory.setText(item.fields.typologie + " " + item.fields.categorie);
 
         return convertView;
 
