@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ui.home.HomeActivity">
+    tools:context="ui.home.HomeActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -14,31 +14,31 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/accueil1"
-            />
+            android:src="@drawable/accueil1" />
 
         <Button
             style="@style/SplashHomeAccueil1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/accueil2"
-            android:text="@string/text_button_accueil2"
-            />
+            android:text="@string/text_button_accueil2" />
 
     </LinearLayout>
 
     <Button
+        android:onClick="showRestaurant"
         style="@style/SplashTextHome"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/accueil3"
-        android:text="RESERVER\nUN RESTAURANT"/>
+        android:text="RESERVER\nUN RESTAURANT" />
 
     <Button
+        android:onClick="showHotel"
         style="@style/SplashTextHome"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/accueil4"
-        android:text="RESERVER\nUN HOTEL"/>
+        android:text="RESERVER\nUN HOTEL" />
 
 </LinearLayout>

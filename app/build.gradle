@@ -19,6 +19,12 @@ android {
 }
 
 dependencies {
+    // volley: requete http
+    implementation group: 'com.android.volley', name: 'volley', version: '1.1.1'
+    // picasso: afficher une image
+    implementation group: 'com.squareup.picasso', name: 'picasso', version: '2.71828'
+    // gson: parser le flux JSON
+    implementation group: 'com.google.code.gson', name: 'gson', version: '2.8.5'
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'com.android.support:appcompat-v7:28.0.0'
     implementation 'com.android.support.constraint:constraint-layout:1.1.3'
