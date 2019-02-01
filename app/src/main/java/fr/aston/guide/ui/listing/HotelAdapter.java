@@ -10,11 +10,10 @@ import android.widget.TextView;
 import java.util.List;
 
 import fr.aston.guide.R;
-import fr.aston.guide.models.hotel.Hotel;
 import fr.aston.guide.models.hotel.Records;
 
 public class HotelAdapter extends ArrayAdapter<Records> {
-    private  int resId;
+    private int resId;
 
 
     public HotelAdapter( Context context, int resource, List<Records> objects) {
@@ -37,6 +36,5 @@ public class HotelAdapter extends ArrayAdapter<Records> {
         textViewCategory.setText(item.fields.typologie + " " + item.fields.categorie);
 
         return convertView;
-
     }
 }

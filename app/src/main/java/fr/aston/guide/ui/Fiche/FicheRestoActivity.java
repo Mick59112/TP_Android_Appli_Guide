@@ -12,7 +12,7 @@ import com.squareup.picasso.Picasso;
 import fr.aston.guide.R;
 import fr.aston.guide.models.restaurant.Restaurant;
 
-public class FicheActivity extends AppCompatActivity {
+public class FicheRestoActivity extends AppCompatActivity {
     private ImageView imageFicheResto;
     private TextView titleFicheResto;
     private TextView categoryFicheResto;

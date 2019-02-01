@@ -12,7 +12,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.Fiche.FicheActivity"></activity>
+        <activity android:name=".ui.Fiche.FicheRestoActivity"></activity>
         <activity android:name=".ui.FicheActivity" />
         <activity android:name=".ui.listing.ListingActivity" />
         <activity android:name=".ui.home.HomeActivity" />
@@ -25,6 +25,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".ui.Fiche.FicheHotelActivity" />
     </application>
 
 </manifest>

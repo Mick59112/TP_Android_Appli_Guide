@@ -4,16 +4,16 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.Fiche.FicheRestoActivity">
+    tools:context=".ui.Fiche.FicheHotelActivity">
 
     <ImageView
-        android:id="@+id/ImageViewFicheResto"
+        android:id="@+id/ImageViewFicheHotel"
         android:layout_width="match_parent"
         android:layout_height="200dp"
         tools:src="@drawable/photo_restaurant" />
 
     <TextView
-        android:id="@+id/TextViewFicheNameResto"
+        android:id="@+id/TextViewFicheNameHotel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="10dp"
@@ -21,14 +21,14 @@
         tools:text="NOM RESTAURANT"/>
 
     <TextView
-        android:id="@+id/TextViewFicheCategoryResto"
+        android:id="@+id/TextViewFicheCategoryHotel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="10dp"
         tools:text="Catégorie"/>
 
     <Button
-        android:id="@+id/ButtonEmailFicheResto"
+        android:id="@+id/ButtonEmailFicheHotel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         tools:text="contact@resto.fr"
@@ -40,7 +40,7 @@
         />
 
     <Button
-        android:id="@+id/ButtonPhoneFicheResto"
+        android:id="@+id/ButtonPhoneFicheHotel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         tools:text="0102030405"
@@ -51,7 +51,7 @@
         android:textColor="@color/colorWhite"/>
 
     <Button
-        android:id="@+id/ButtonWebFicheResto"
+        android:id="@+id/ButtonWebFicheHotel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         tools:text="http://www.resto.fr"

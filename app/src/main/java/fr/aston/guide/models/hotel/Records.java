@@ -1,8 +1,8 @@
 package fr.aston.guide.models.hotel;
 
-import java.util.List;
+import java.io.Serializable;
 
-public class Records {
+public class Records implements Serializable {
 
     public Fields fields;
 }

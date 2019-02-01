@@ -17,27 +17,24 @@ import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.google.gson.Gson;
 
-import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
 import fr.aston.guide.R;
 import fr.aston.guide.models.hotel.Hotel;
 import fr.aston.guide.models.restaurant.Restaurant;
-import fr.aston.guide.ui.Fiche.FicheActivity;
-import fr.aston.guide.ui.home.HomeActivity;
-import fr.aston.guide.ui.main.MainActivity;
+import fr.aston.guide.ui.Fiche.FicheHotelActivity;
+import fr.aston.guide.ui.Fiche.FicheRestoActivity;
 import fr.aston.guide.utils.Constant;
 import fr.aston.guide.utils.FastDialog;
 import fr.aston.guide.utils.Network;
 
 public class ListingActivity extends AppCompatActivity {
+
     private TextView textViewTitle;
     private ListView listViewData;
-
     private List<Restaurant> restaurantList;
-    private List<Hotel> hotelList;
-
+    private Hotel psh;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,9 +59,10 @@ public class ListingActivity extends AppCompatActivity {
                 listViewData.setAdapter(new  RestaurantAdapter(ListingActivity.this,R.layout.item_restaurant,restaurantList));
 
                 listViewData.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
                     @Override
                     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                        Intent intent = new Intent(ListingActivity.this, FicheActivity.class);
+                        Intent intent = new Intent(ListingActivity.this, FicheRestoActivity.class);
                         intent.putExtra("restaurant", restaurantList.get(position));
                         startActivity(intent);
                     }
@@ -83,6 +81,8 @@ public class ListingActivity extends AppCompatActivity {
                         public void onResponse(String response) {
                             Log.e("response", response);
                             getData(response);
+
+
                         }
                     }, new Response.ErrorListener() {
 
@@ -106,9 +106,17 @@ public class ListingActivity extends AppCompatActivity {
     }
 
     private void getData(String response) {
-        Hotel psh = new Gson().fromJson(response, Hotel.class);
-        hotelList = new ArrayList<>();
-        hotelList.add(new Hotel());
+        psh = new Gson().fromJson(response, Hotel.class);
         listViewData.setAdapter(new HotelAdapter(ListingActivity.this,R.layout.item_restaurant,psh.records));
+
+        listViewData.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent intent = new Intent(ListingActivity.this, FicheHotelActivity.class);
+                intent.putExtra("hotel", psh.records.get(position).fields);
+                startActivity(intent);
+            }
+        });
     }
+
 }
