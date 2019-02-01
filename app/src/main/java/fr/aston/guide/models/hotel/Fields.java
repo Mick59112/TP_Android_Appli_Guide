@@ -11,4 +11,5 @@ public class Fields implements Serializable {
     public String capacite_personne;
     public String nom;
     public String adresse;
+    public Double[] coord_geo_adresse;
 }

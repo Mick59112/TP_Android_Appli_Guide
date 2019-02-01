@@ -4,6 +4,7 @@
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
 
     <application
         android:allowBackup="true"
@@ -13,9 +14,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".ui.Fiche.FicheRestoActivity"></activity>
-        <activity android:name=".ui.FicheActivity" />
         <activity android:name=".ui.listing.ListingActivity" />
         <activity android:name=".ui.home.HomeActivity" />
+        <activity android:name=".ui.Fiche.FicheHotelActivity" />
         <activity
             android:name=".ui.main.MainActivity"
             android:theme="@style/SplashTheme">
@@ -25,7 +26,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.Fiche.FicheHotelActivity" />
     </application>
 
 </manifest>

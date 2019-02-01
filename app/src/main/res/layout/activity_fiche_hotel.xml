@@ -1,16 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:mapbox="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.Fiche.FicheHotelActivity">
 
-    <ImageView
-        android:id="@+id/ImageViewFicheHotel"
+    <com.mapbox.mapboxsdk.maps.MapView
+        android:id="@+id/MapViewFicheHotel"
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        tools:src="@drawable/photo_restaurant" />
+        mapbox:layout_constraintBottom_toBottomOf="parent"
+        mapbox:layout_constraintEnd_toEndOf="parent"
+        mapbox:layout_constraintStart_toStartOf="parent"
+        mapbox:layout_constraintTop_toTopOf="parent"
+        mapbox:mapbox_cameraZoom="10"
+        />
 
     <TextView
         android:id="@+id/TextViewFicheNameHotel"
